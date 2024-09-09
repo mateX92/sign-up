@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pixelify+Sans:wght@700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    font-size: 1.2em;
+}
+
+p, h2{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+}
+
 body{
     display: flex;
     flex-direction: row;
@@ -7,33 +18,81 @@ body{
 /* LOGO SECTION */
 
 #logo_section{
-    width: 40vw;
+    width: 35vw;
     height: 100vh;
     background-image: url('img/bg.jpg');
     background-size: cover;
 }
 
 #logo_section div{
-    max-height: 20%;
+    max-height: 20vh;
     width: 100%;
+    position: relative;
+    top: 20vh;
     background-color: rgb(0, 0, 0,0.5);
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 #logo_section div img {
     object-fit: contain;
+    max-width: 20%;
     padding-top: 1%;
     padding-bottom: 1%;
 }
 
 h1{
-    font-family:
+    font-family: "Pixelify Sans", sans-serif;
     color: white;
+    font-size: 5rem;
+    align-content: center;
 }
 
-#form_section{
-    width: 60vw;
-    height: 100vh;
+/* FOrM SIDE */
+
+h2{
+    margin-bottom: 2%;
 }
+#form_section{
+    width: 65vw;
+    height: 80vh;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#form_div{
+    box-shadow: 0 -0.1px 10px rgba(0, 0, 0, 0.1), 
+                0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+#form_section > div{
+    padding: 5%;
+}
+
+form{
+    display: flex;
+    flex-direction: row;
+}
+
+label{
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+}
+
+form > div{
+    display: flex;
+    flex-direction: column;
+    margin-right: 5%;
+}
+
+input{
+    margin-bottom: 2vh;
+    min-width: 40vh;
+    min-height: 1.5rem;
+    border-radius: 5px;
+}
+
