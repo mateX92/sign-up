@@ -1,12 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pixelify+Sans:wght@700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root{
-    font-size: 1.2em;
+    font-size: 1.1em;
+}
+
+h1{
+    font-size: 5rem;
+}
+
+p, h2, h3, button, span, h5{
+    font-family: "Open Sans", sans-serif;
 }
 
 p, h2{
-    font-family: "Open Sans", sans-serif;
     font-weight: 600;
+    font-size: 1.2rem;
+}
+
+h3, #login, h5{
+    font-size: 0.9rem;
+}
+
+button{
+    cursor: pointer;
+}
+
+.italics{
+    font-style: italic;
 }
 
 body{
@@ -35,6 +55,13 @@ body{
     justify-content: center;
 }
 
+footer{
+    text-align: center;
+    margin-top: auto;
+    position: relative;
+    top: 76vh;
+}
+
 #logo_section div img {
     object-fit: contain;
     max-width: 20%;
@@ -45,7 +72,6 @@ body{
 h1{
     font-family: "Pixelify Sans", sans-serif;
     color: white;
-    font-size: 5rem;
     align-content: center;
 }
 
@@ -54,6 +80,7 @@ h1{
 h2{
     margin-bottom: 2%;
 }
+
 #form_section{
     width: 65vw;
     height: 80vh;
@@ -62,15 +89,20 @@ h2{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    background-color: rgb(245, 245, 245);
 }
 
 #form_div{
     box-shadow: 0 -0.1px 10px rgba(0, 0, 0, 0.1), 
                 0 5px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    background-color: rgb(250, 250, 250);
+    padding: 3vh 0 3vh 0;
 }
 
 #form_section > div{
-    padding: 5%;
+    padding-right: 20%;
+    padding-left: 5vh;
 }
 
 form{
@@ -90,9 +122,44 @@ form > div{
 }
 
 input{
+    border: 2px solid #E5E7EB;
+    outline: none;
     margin-bottom: 2vh;
     min-width: 40vh;
     min-height: 1.5rem;
     border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+input:focus{
+    border-color: rgb(123, 143, 197);
+    box-shadow: 2px 1px 5px rgb(202, 202, 202);
+}
+
+input:invalid{
+    border-color: red;
+}
+
+#btn{
+    background-color: cadetblue;
+    color: rgb(250, 250, 250);
+    font-size: 1.1rem;
+    padding: 1vh 5vh 1vh 5vh;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 2%;
+    
+}
+
+#logging{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#login{
+    color: cadetblue;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
 }
 

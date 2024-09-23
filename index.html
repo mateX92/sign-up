@@ -15,14 +15,17 @@
             <img src="img/odin-lined.png">
             <h1>ODIN</h1>
         </div>
+        <footer>
+            <h5>Photo by <a href="https://unsplash.com/@ninjason">Jason Leung</a> on <a href="https://unsplash.com/">Unsplash</a>.</h5>
+        </footer>
     </section>
 
     <section id="form_section">
         <div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  </p>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit.</p>
             <br>
-            <p>You <i>know</i> what to do.</p>
+            <p>You <span class="italics">know</span> what to do.</p>
         </div>
         <div id="form_div">
             <h2>Let's do this!</h2>
@@ -39,15 +42,17 @@
                     <label for="phone">Phone Number</label>
                     <input id="phone">
                     <label for="password">Password</label>
-                    <input id="password">
+                    <input type="password" id="password" required>
                     <label for="password2">Confirm Password</label>
-                    <input id="password2">
+                    <input type="password" id="password2" required>
                 </div>
             </form>
         </div>
-        <div>
-            <button>Create Account</button>
-            <p>Already have account?</p><button>Log In</button>
+        <div id="account">
+            <button id="btn">Create Account</button>
+            <div id="logging">
+                <h3>Already have account?</h3><button id="login">Log In</button>
+            </div>
         </div>
     </section>
 
